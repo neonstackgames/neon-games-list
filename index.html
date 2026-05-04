@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neon Game Bundle</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background: radial-gradient(circle at top, #0f0f2a, #0a0a0a);
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* glowing background */
+    .bg-glow{
+      position:fixed;
+      width:300px;
+      height:300px;
+      background:purple;
+      filter:blur(120px);
+      opacity:0.2;
+      animation: float 8s infinite alternate;
+      z-index:-1;
+    }
+
+    @keyframes float{
+      from{transform:translateY(0px) translateX(0px);}
+      to{transform:translateY(120px) translateX(60px);}
+    }
+
+    .container{
+      padding:30px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    h1{
+      text-align:center;
+      color:#ff3df2;
+      text-shadow:0 0 10px #ff3df2, 0 0 25px #7a00ff;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow{
+      from{text-shadow:0 0 10px #ff3df2;}
+      to{text-shadow:0 0 25px #00f7ff;}
+    }
+
+    h2{
+      margin-top:30px;
+      padding:10px;
+      border-left:5px solid #00f7ff;
+      color:#00f7ff;
+      text-shadow:0 0 10px #00f7ff;
+    }
+
+    .box{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:15px;
+      border-radius:12px;
+      box-shadow:0 0 20px rgba(0,0,0,0.6);
+      transition:0.3s;
+    }
+
+    .box:hover{
+      transform:scale(1.01);
+      box-shadow:0 0 25px #7a00ff;
+    }
+
+    pre{
+      white-space:pre-wrap;
+      line-height:1.6;
+      font-size:14px;
+      margin:0;
+    }
+
+    /* 🎮 controller */
+    .controller{
+      position:fixed;
+      bottom:25px;
+      left:25px;
+      font-size:55px;
+      animation: move 3s infinite alternate ease-in-out;
+      filter: drop-shadow(0 0 10px #00f7ff);
+      opacity:0.7;
+    }
+
+    /* 💸 money */
+    .money{
+      position:fixed;
+      top:40px;
+      right:40px;
+      font-size:40px;
+      animation: move2 4s infinite alternate ease-in-out;
+      opacity:0.6;
+    }
+
+    /* 📦 box */
+    .boxicon{
+      position:fixed;
+      bottom:40px;
+      right:100px;
+      font-size:45px;
+      animation: move3 5s infinite alternate ease-in-out;
+      opacity:0.6;
+    }
+
+    @keyframes move{
+      0%{transform:translateY(0px) rotate(-5deg);}
+      100%{transform:translateY(-25px) rotate(5deg);}
+    }
+
+    @keyframes move2{
+      0%{transform:translateY(0px) rotate(0deg);}
+      100%{transform:translateY(-30px) rotate(10deg);}
+    }
+
+    @keyframes move3{
+      0%{transform:translateY(0px) rotate(-10deg);}
+      100%{transform:translateY(-20px) rotate(10deg);}
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+<div class="bg-glow" style="left:70%; top:20%; background:#00f7ff;"></div>
+
+<!-- floating icons -->
+<div class="controller">🎮</div>
+<div class="money">💸</div>
+<div class="boxicon">📦</div>
+
+<div class="container">
+
+<h1> 𝐀𝐀𝐀 𝐆𝐀𝐌𝐄𝐒 (𝐌𝐄𝐆𝐀 𝐁𝐔𝐍𝐃𝐋𝐄 𝐂𝐎𝐑𝐄 ₱𝟔𝟒𝟗) 💸 </h1>
+
+<h2>🎮 CASUAL GAMES</h2>
+<div class="box">
+<pre>
+35MM
+3DMark
+A.I.M. Racing
+Age of Darkness Final Stand
+Ages of Conflict World War Simulator
+Aloft
+Amazing Frog 2
+American Truck Simulator
+Ancient Warfare The Han Dynasty
+Animal Shelter
+Anime Studio Story
+Animus - Stand Alone
+Anonymous Hacker Simulator
+Another Crab's Treasure
+Anthology of Fear
+Anvil Saga
+Apewar
+Apocalypse Party
+Aquatico
+ARAYA
+Arctic Eggs
+Arena Renovation
+Ares Virus2
+Arise A Simple Story
+ARK The Survival Of The Fittest
+Arms Evolution ZOMBIE DESTROYER
+Art Reborn Painting Connoisseur
+As Far As The Eye
+Bakery Simulator
+Banished
+BattleBit Remastered
+BeamNG.drive
+Beholder / Beholder 2 / Beholder 3
+Blood and Bacon
+Brick Rigs
+Bridge Constructor Portal
+Brotato
+Buckshot Roulette
+Bus Simulator 18
+Car For Sale Simulator 2023
+Car Mechanic Simulator 2021
+City Car Driving / CityDriver
+Cookie Clicker
+Core Keeper
+Contraband Police
+Craftopia
+Crime Scene Cleaner
+Crosshair X
+Dance of Fire and Ice
+Delivery INC
+Demonologist
+Dinkum
+Drug Dealer Simulator 2
+Euro Truck Simulator 2
+Farming Simulator 15 / 17 / 19 / 22 / 25
+Fast Food Simulator
+Fireworks Mania
+Fishing North Atlantic
+Flashing Lights Simulator
+Forts
+Frostpunk
+Gas Station Simulator
+GoreBox
+Graveyard Shift
+Grim Dawn
+Gym Simulator 24
+House Flipper / House Flipper 2
+Human Fall Flat
+HumanKind
+HumanitZ
+Internet Cafe Simulator 2
+Kiosk
+Kubifaktorium
+Labyrinthine
+Liftoff
+LIMBO
+Lorn’s Lure
+Machinika Museum
+Mahjong Club
+Meeple Station
+Mindustry
+Mist Survival
+Motel Manager Simulator
+MudRunner / SnowRunner
+My Summer Car
+Need for Speed series
+Needy Streamer Overload
+No Place Like Home
+One Hand Clapping
+Papa’s Pizzeria Deluxe
+Paper Bride
+Paperbark
+Parking Tycoon Simulator
+Party Animals
+PC Building Simulator
+People Playground
+PowerWash Simulator
+Project Zomboid
+Raft
+Ranch Simulator
+Ravenfield
+Road 96
+Rooftops & Alleys
+Scrap Mechanic
+Session Skate Sim
+Settlement Survival
+Sifu
+Skater XL
+Slime Rancher / Slime Rancher 2
+Small Spaces
+Sniper Elite series
+SnowRunner
+Spintires
+Squad
+Stardew Valley
+State of Decay 2
+Stranded Deep
+Sunkenland
+Supermarket Simulator / Supermarket Together
+Taxi Life Simulator
+TCG Card Shop Simulator
+Teardown
+Terraria
+The Bus
+The Forest
+The Isle
+The Long Drive
+The Ramp
+The Survivalists
+The Quarry
+The Walking Dead series
+theHunter Call of the Wild
+Tiny Bunny
+Train Sim World 5
+Train Simulator Classic
+Turmoil
+Valheim
+Wallpaper Engine
+Warhammer Vermintide 2
+Warlords
+Wobbly Life
+WorldBox God Simulator
+X-Plane 12
+Youtubers Life 2
+</pre>
+</div>
+
+<h2>🕹️ AAA GAMES FOR NEW BUYERS</h2>
+<div class="box">
+<pre>
+Assassin’s Creed series (Odyssey, Origins, Valhalla, Mirage, Unity, Syndicate, Black Flag)
+Call of Duty series (MW, Black Ops, WWII, etc.)
+The Witcher 3 Wild Hunt
+Cyberpunk 2077
+Elden Ring
+Dark Souls I / II / III
+Sekiro
+Resident Evil series (0–Village)
+Dead Space
+The Last of Us Part I / II
+Metro series (2033, Exodus, Last Light)
+God of War Ragnarök
+Horizon Forbidden West
+Ghost of Tsushima
+Marvel’s Spider-Man / Miles Morales / Spider-Man 2
+GTA series (III, IV, V, San Andreas, Vice City)
+Red Dead Redemption 1 & 2
+Max Payne 3
+🚗 𝐑𝐚𝐜𝐢𝐧𝐠 𝐀𝐀𝐀
+𝐅𝐨𝐫𝐳𝐚 𝐇𝐨𝐫𝐢𝐳𝐨𝐧 𝟓
+𝐀𝐬𝐬𝐞𝐭𝐭𝐨 𝐂𝐨𝐫𝐬𝐚 / 𝐄𝐕𝐎
+𝐅𝟏 / 𝐌𝐨𝐭𝐨 𝐆𝐏 / 𝐃𝐢𝐫𝐭 𝐬𝐞𝐫𝐢𝐞𝐬
+🎯 𝐎𝐭𝐡𝐞𝐫 𝐀𝐀𝐀 𝐛𝐢𝐠 𝐭𝐢𝐭𝐥𝐞𝐬
+𝐃𝐞𝐭𝐫𝐨𝐢𝐭: 𝐁𝐞𝐜𝐨𝐦𝐞 𝐇𝐮𝐦𝐚𝐧
+𝐃𝐞𝐚𝐭𝐡 𝐒𝐭𝐫𝐚𝐧𝐝𝐢𝐧𝐠 𝐃𝐢𝐫𝐞𝐜𝐭𝐨𝐫’𝐬 𝐂𝐮𝐭
+𝐌𝐞𝐭𝐚𝐥 𝐆𝐞𝐚𝐫 𝐒𝐨𝐥𝐢𝐝 𝐕: 𝐓𝐡𝐞 𝐏𝐡𝐚𝐧𝐭𝐨𝐦 𝐏𝐚𝐢𝐧
+𝐌𝐞𝐭𝐚𝐥 𝐆𝐞𝐚𝐫 𝐑𝐢𝐬𝐢𝐧𝐠 𝐑𝐞𝐯𝐞𝐧𝐠𝐞𝐚𝐧𝐜𝐞
+𝐇𝐀𝐋𝐎: 𝐓𝐡𝐞 𝐌𝐚𝐬𝐭𝐞𝐫 𝐂𝐡𝐢𝐞𝐟 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧
+𝐆𝐞𝐚𝐫𝐬 𝟓
+𝐂𝐨𝐧𝐭𝐫𝐨𝐥 𝐔𝐥𝐭𝐢𝐦𝐚𝐭𝐞 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
+𝐃𝐞𝐚𝐭𝐡’𝐬 𝐃𝐨𝐨𝐫 (𝐀𝐀/𝐢𝐧𝐝𝐢𝐞-𝐀𝐀𝐀 𝐦𝐢𝐱)
+</pre>
+</div>
+
+<h2>🎮 INDIE GAMES</h2>
+<div class="box">
+<pre>
+𝐈𝐍𝐃𝐈𝐄 𝐆𝐀𝐌𝐄𝐒 (𝐬𝐭𝐨𝐫𝐲, 𝐩𝐢𝐱𝐞𝐥, 𝐡𝐨𝐫𝐫𝐨𝐫, 𝐮𝐧𝐢𝐪𝐮𝐞 𝐬𝐭𝐲𝐥𝐞)
+𝐀 𝐏𝐥𝐚𝐠𝐮𝐞 𝐓𝐚𝐥𝐞: 𝐈𝐧𝐧𝐨𝐜𝐞𝐧𝐜𝐞
+𝐀𝐛𝐢𝐨𝐭𝐢𝐜 𝐅𝐚𝐜𝐭𝐨𝐫
+𝐀𝐥𝐚𝐧 𝐖𝐚𝐤𝐞 / 𝐀𝐦𝐞𝐫𝐢𝐜𝐚𝐧 𝐍𝐢𝐠𝐡𝐭𝐦𝐚𝐫𝐞
+𝐀𝐦𝐨𝐧𝐠 𝐓𝐫𝐞𝐞𝐬
+𝐀𝐫𝐚𝐠𝐚𝐦𝐢 𝟐
+𝐀𝐫𝐜𝐡𝐯𝐚𝐥𝐞
+𝐀𝐒𝐓𝐋𝐈𝐁𝐑𝐀 𝐑𝐞𝐯𝐢𝐬𝐢𝐨𝐧
+𝐀𝐬𝐭𝐫𝐚𝐥 𝐀𝐬𝐜𝐞𝐧𝐭
+𝐀𝐬𝐭𝐫𝐞𝐚 𝐒𝐢𝐱-𝐒𝐢𝐝𝐞𝐝 𝐎𝐫𝐚𝐜𝐥𝐞𝐬
+𝐁𝐞𝐡𝐨𝐥𝐝𝐞𝐫 𝐬𝐞𝐫𝐢𝐞𝐬 (𝐩𝐰𝐞𝐝𝐞 𝐝𝐢𝐧 𝐢𝐧𝐝𝐢𝐞/𝐜𝐚𝐬𝐮𝐚𝐥 𝐦𝐢𝐱)
+𝐁𝐞𝐧𝐝𝐲 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐈𝐧𝐤 𝐌𝐚𝐜𝐡𝐢𝐧𝐞
+𝐁𝐥𝐚𝐢𝐫 𝐖𝐢𝐭𝐜𝐡
+𝐁𝐫𝐚𝐦𝐛𝐥𝐞 𝐓𝐡𝐞 𝐌𝐨𝐮𝐧𝐭𝐚𝐢𝐧 𝐊𝐢𝐧𝐠
+𝐁𝐮𝐥𝐥𝐲 𝐒𝐜𝐡𝐨𝐥𝐚𝐫𝐬𝐡𝐢𝐩 𝐄𝐝𝐢𝐭𝐢𝐨𝐧
+𝐂𝐞𝐥𝐞𝐬𝐭𝐞
+𝐂𝐡𝐚𝐢𝐧𝐞𝐝 𝐓𝐨𝐠𝐞𝐭𝐡𝐞𝐫
+𝐂𝐡𝐨𝐨-𝐂𝐡𝐨𝐨 𝐂𝐡𝐚𝐫𝐥𝐞𝐬
+𝐂𝐎𝐂𝐎𝐎𝐍
+𝐂𝐮𝐩𝐡𝐞𝐚𝐝
+𝐃𝐚𝐫𝐤 𝐃𝐞𝐜𝐞𝐩𝐭𝐢𝐨𝐧
+𝐃𝐚𝐫𝐤 𝐒𝐞𝐜𝐭𝐨𝐫
+𝐃𝐚𝐧𝐠𝐚𝐧𝐫𝐨𝐧𝐩𝐚 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐃𝐞𝐚𝐭𝐡’𝐬 𝐃𝐨𝐨𝐫
+𝐃𝐄𝐕𝐎𝐔𝐑
+𝐃𝐨𝐤𝐢 𝐃𝐨𝐤𝐢 𝐋𝐢𝐭𝐞𝐫𝐚𝐭𝐮𝐫𝐞 𝐂𝐥𝐮𝐛 𝐏𝐥𝐮𝐬
+𝐃𝐨𝐧’𝐭 𝐒𝐭𝐚𝐫𝐯𝐞 / 𝐓𝐨𝐠𝐞𝐭𝐡𝐞𝐫
+𝐃𝐔𝐒𝐊
+𝐄𝐍𝐃𝐄𝐑 𝐌𝐀𝐆𝐍𝐎𝐋𝐈𝐀
+𝐅𝐞𝐚𝐫𝐬 𝐭𝐨 𝐅𝐚𝐭𝐡𝐨𝐦 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐅𝐢𝐫𝐞𝐰𝐚𝐭𝐜𝐡 (𝐰𝐚𝐥𝐚 𝐬𝐚 𝐥𝐢𝐬𝐭 𝐩𝐞𝐫𝐨 𝐬𝐚𝐦𝐞 𝐜𝐚𝐭𝐞𝐠𝐨𝐫𝐲 𝐯𝐢𝐛𝐞)
+𝐅𝐢𝐯𝐞 𝐍𝐢𝐠𝐡𝐭𝐬 𝐚𝐭 𝐅𝐫𝐞𝐝𝐝𝐲’𝐬 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐆𝐚𝐭𝐨 𝐑𝐨𝐛𝐨𝐭𝐨
+𝐆𝐨𝐭𝐡𝐢𝐜 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐆𝐫𝐚𝐧𝐧𝐲 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐇𝐚𝐝𝐞𝐬
+𝐇𝐚𝐭𝐫𝐞𝐝
+𝐇𝐞𝐥𝐥𝐨 𝐍𝐞𝐢𝐠𝐡𝐛𝐨𝐫 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐇𝐞𝐥𝐥𝐛𝐥𝐚𝐝𝐞 𝐒𝐞𝐧𝐮𝐚’𝐬 𝐒𝐚𝐜𝐫𝐢𝐟𝐢𝐜𝐞
+𝐇𝐞𝐫 𝐒𝐭𝐨𝐫𝐲 / 𝐢𝐧𝐭𝐞𝐫𝐚𝐜𝐭𝐢𝐯𝐞 𝐬𝐭𝐲𝐥𝐞 (𝐬𝐢𝐦𝐢𝐥𝐚𝐫 𝐯𝐢𝐛𝐞 𝐠𝐚𝐦𝐞𝐬)
+𝐇𝐨𝐥𝐥𝐨𝐰 𝐊𝐧𝐢𝐠𝐡𝐭
+𝐇𝐨𝐭𝐥𝐢𝐧𝐞 𝐌𝐢𝐚𝐦𝐢 𝟏 & 𝟐
+𝐇𝐲𝐥𝐢𝐜𝐬
+𝐈𝐍𝐒𝐈𝐃𝐄
+𝐈𝐭 𝐓𝐚𝐤𝐞𝐬 𝐓𝐰𝐨
+𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐬𝐭𝐲𝐥𝐞 𝐠𝐚𝐦𝐞𝐬 (𝐬𝐢𝐦𝐢𝐥𝐚𝐫 𝐢𝐧𝐝𝐢𝐞 𝐬𝐭𝐨𝐫𝐲 𝐠𝐚𝐦𝐞𝐬)
+𝐋𝐢𝐭𝐭𝐥𝐞 𝐍𝐢𝐠𝐡𝐭𝐦𝐚𝐫𝐞𝐬 𝟏 & 𝟐
+𝐋𝐢𝐭𝐭𝐥𝐞 𝐌𝐢𝐬𝐟𝐨𝐫𝐭𝐮𝐧𝐞
+𝐌𝐚𝐜𝐡𝐢𝐧𝐚𝐫𝐢𝐮𝐦
+𝐌𝐞𝐥𝐚𝐭𝐨𝐧𝐢𝐧
+𝐌𝐢𝐒𝐢𝐝𝐞
+𝐌𝐨𝐮𝐭𝐡𝐰𝐚𝐬𝐡𝐢𝐧𝐠
+𝐍𝐨𝐢𝐭𝐚
+𝐎𝐌𝐎𝐑𝐈
+𝐎𝐧𝐞𝐒𝐡𝐨𝐭
+𝐎𝐫𝐢 𝐚𝐧𝐝 𝐭𝐡𝐞 𝐁𝐥𝐢𝐧𝐝 𝐅𝐨𝐫𝐞𝐬𝐭 / 𝐖𝐢𝐥𝐥 𝐨𝐟 𝐭𝐡𝐞 𝐖𝐢𝐬𝐩𝐬
+𝐎𝐮𝐭𝐥𝐚𝐬𝐭 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐏𝐚𝐩𝐞𝐫𝐬, 𝐏𝐥𝐞𝐚𝐬𝐞 (𝐬𝐭𝐲𝐥𝐞 𝐜𝐚𝐭𝐞𝐠𝐨𝐫𝐲)
+𝐏𝐞𝐠𝐥𝐢𝐧
+𝐏𝐢𝐳𝐳𝐚 𝐓𝐨𝐰𝐞𝐫
+𝐏𝐨𝐩𝐩𝐲 𝐏𝐥𝐚𝐲𝐭𝐢𝐦𝐞 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐏𝐨𝐫𝐭𝐚𝐥 𝟏 & 𝟐
+𝐑𝐚𝐢𝐧 𝐖𝐨𝐫𝐥𝐝
+𝐑𝐞𝐯𝐞𝐧𝐭𝐮𝐫𝐞
+𝐒𝐈𝐆𝐍𝐀𝐋𝐈𝐒
+𝐒𝐎𝐌𝐀
+𝐒𝐥𝐞𝐧𝐝𝐞𝐫 𝐬𝐞𝐫𝐢𝐞𝐬
+𝐒𝐮𝐩𝐞𝐫 𝐌𝐞𝐚𝐭 𝐁𝐨𝐲
+𝐒𝐔𝐏𝐄𝐑𝐇𝐎𝐓
+𝐒𝐮𝐩𝐞𝐫𝐥𝐢𝐦𝐢𝐧𝐚𝐥
+𝐔𝐧𝐝𝐞𝐫𝐭𝐚𝐥𝐞
+𝐔𝐧𝐫𝐚𝐯𝐞𝐥 𝐓𝐰𝐨
+𝐕𝐢𝐬𝐚𝐠𝐞
+𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐊𝐨𝐰𝐥𝐨𝐨𝐧
+𝐖𝐞 𝐇𝐚𝐩𝐩𝐲 𝐅𝐞𝐰 𝐯𝐢𝐛𝐞 𝐠𝐚𝐦𝐞𝐬 (𝐬𝐢𝐦𝐢𝐥𝐚𝐫 𝐢𝐧𝐝𝐢𝐞 𝐡𝐨𝐫𝐫𝐨𝐫)
+</pre>
+</div>
+
+</div>
+
+</body>
+</html>
